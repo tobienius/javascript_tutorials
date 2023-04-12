@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #pick{
+        display: none;
+    }
+</style>
+
+<body>
+    
+        <div id="pick">
+            <img src="pick/images (13).jpeg" alt="">
+            <img src="pick/download (4).jpeg" alt="">
+        </div>
+        
+       <button onclick="Picture()">click here to view Picture</button>
+ <script>
+let aa= document.getElementById('pick');
+let check = true;
+
+function Picture(){
+    if(check === true){
+           aa.style.display="block";
+            check =false;
+        }
+        else{
+            
+            aa.style.display="none";
+            check=true;
+        }
+
+    }
+
+
+
+ </script>
+</body>
+</html>

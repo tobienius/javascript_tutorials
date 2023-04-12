@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="price">
+    <img src="../lesson 1/clothe/shirt.jpeg" alt="">
+    <h3>price $12</h3>
+    <P>A Red Shirt For US</P>
+    </div>
+
+    
+
+    <!--<div id="object">
+     <img src="../lesson 1/clothe/band.jpeg" alt="">
+    <h3>price $15</h3>
+    <P>A band For US</P>
+    </div>
+    <button onclick="open()">open</button>
+    <button onclick="close()">close</button>-->
+    
+
+    <h1 id="body" onclick="clock()">wecome to my world</h1>
+    <h1 id="head" onclick="document.getElementById('head').innerHTML =Date();">hello world</h1>
+    <h1 id="id" onclick="this.innerHTML = new Date().getDate();">wecome to my world</h1>
+    <h1 id="year" onclick="year()">which year are we</h1>
+
+    
+    <BUtton onclick="close()">open</BUtton>
+    <button onclick="open()">close</button>
+    
+    <script>
+        function clock(){
+            document.getElementById("body").innerHTML =Date();
+        }
+        
+        function year(){
+            document.getElementById("year").innerHTML =new Date().getFullYear
+        }
+
+        function open(){
+            var aa=document.getElementById("price");
+            aa.style.display="block";
+        }
+
+        function close(){
+            var az=document.getElementById("price");
+            az.style.display="none";
+        }
+    </script>
+</body>
+</html>

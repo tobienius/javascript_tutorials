@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let name="samuel";
+         let pin=1234;
+         let balance=1200;
+         //let number=08165726377
+        givenName= prompt('enter your name');
+        pinNo =+prompt("enter yonr pin");
+        //alert(typeof pinNo)
+        if(givenName === name && pinNo === pin){
+            result=+prompt('press 1 to check your balance .press 2 to buy recharge card.press 3 to make transfer.');
+            if(result ===1){
+                document.body.innerHTML=" your account balance is " + balance;
+            }
+            else if(result ===2){
+                phone=+prompt('enter your number');
+                amt=+prompt('enter the amount you want to recharge');
+                if(balance >= amt){
+                    balance = balance - amt;
+                    //balance -=amt
+                    document.body.innerHTML=" recharge was successful on " + phone + " and your balance is"  + balance;
+                }
+                else{
+                      //balance -=amt
+                      document.body.innerHTML=" you have insufficient amount. your balace is "  + balance;
+                }
+            }
+            else if(result === 3){
+                transfer=+prompt('enter your account number');
+                confarm= +prompt('confarm your account number');
+
+                if(confarm === transfer){
+                    amt=+prompt('enter the amount you want to tranfer');
+                    
+                    if(balance >= amt){ 
+                        balance -=amt
+                        document.body.innerHTML=" your tranfer was successful " + balance;
+                    }
+                    else{   
+                      document.body.innerHTML=" your tranfer was NOT successful . your balace is "  + balance;
+                    }
+
+                }
+
+                else{
+                    document.body.innerHTML='account number was incorrect';
+                } 
+            }
+        }
+        else{
+            document.body.innerHTML="wrong information. pls check your  name and pin "
+
+        }
+    </script>
+</body>
+</html>

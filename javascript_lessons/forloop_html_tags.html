@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id="stud"></h1>
+<h1 id="club"></h1>
+<h2 id="math"></h2>
+<h1 id="otp"></h1>
+    <script>
+        let names =['samuel','johnson','jhon','mark','matthew'];
+        let len =names.length;
+        
+        let html_tags ="<ul>";
+            for(let n =0; n<len; n++){
+                html_tags += '<li>' + names[n] + '</li>';
+            }
+
+            html_tags += "</ul>";
+            document.getElementById('stud').innerHTML=html_tags;
+
+
+
+            let clubs=['P.S.G','Man u','chelse','barcelona'];
+            clubs.pop()
+            clubs.push("barcelona")
+            clubs.join("*")
+            console.log(clubs.join('*'));
+            let length=clubs.length;
+            let tags ="<i>";
+
+                for(let a =0; a<length; a++){
+                tags += '<li>' + clubs[a] + '</li>';
+            }
+
+            html_tags += "</i>";
+            document.getElementById('club').innerHTML=tags;
+
+
+
+
+            var xx=3.889999
+            aa=Math.floor(Math.random() *100000)
+            alert(aa)
+            ans=+prompt('enter the otp sent to u')
+            if(aa === ans){
+                document.getElementById('otp').innerHTML="correct answer";
+            }
+            else{
+                document.getElementById('otp').innerHTML="wrong number";
+            }
+        
+            document.getElementById('math').innerHTML=Math.ceil(xx);
+            document.getElementById('math').innerHTML=Math.floor(xx);
+            document.getElementById('math').innerHTML=Math.random() *100000;
+            document.getElementById('math').innerHTML=Math.floor(Math.random() *100000);
+
+
+            var az=7.2344
+           var aq=Math.floor(Math.random() *10000)
+            alert(aq)
+            document.getElementById('math').innerHTML=Math.floor(Math.random() *10000);
+            ans=+prompt('enter the otp number GIVEN to you')
+            if(aq === ans){
+                document.getElementById('otp').innerHTML="correct otp number";
+            }
+            else{
+                document.getElementById('otp').innerHTML="wrong number chick your otp number now";
+            }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>                                                                                                                                                                                                                  
+    <style>
+        #ronaldo{
+            display: block; 
+        }
+        #messi{
+            display: none;
+        }
+        #mbappe{
+            display: none;
+        }
+       button{
+        display: flex;
+        margin-left: 300px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+        font-size: 20px;
+        text-transform: capitalize;
+       }
+    
+       button :hover{
+         color:darkblue;
+       }
+       .onclick{
+         display: flex;
+         margin-left: 400px;
+       }
+        </style>
+        <div class="onclick">
+          <button onclick="foot()">ronaldo</button>
+          <button onclick="ball()">messi</button>
+          <button onclick="football()">mbappe</button>
+       </div>
+       
+        <div id="ronaldo">
+            <img src="pick/ronaldo.jpeg" alt="">
+            <img src="pick/ronaldo34.jpeg" alt="">
+            <br><br>
+        </div>
+    
+        <div id="messi">
+            <img src="pick/messi.jpeg" alt="">
+            <img src="pick/messi11.jpeg" alt="">
+            <br><br>
+        </div>
+    
+        <div id="mbappe">
+            <img src="pick/mbappe.jpeg" alt="">
+            <img src="pick/mbappe1.jpeg" alt="">
+            <br><br>
+        </div>
+
+
+<script>
+    let av= document.getElementById('ronaldo');
+    let az= document.getElementById('messi');
+    let aa= document.getElementById('mbappe');
+        
+        let start = true;
+
+function foot(){
+    if(start === true){
+           av.style.display="block";
+           az.style.display ="none";
+           aa.style.display ="none";
+            start =false;
+        }
+        else{
+            av.style.display="none";
+            start=true;
+        }
+    }
+
+    let first = true;
+    function ball(){
+    if(first === true){
+           az.style.display="block";
+           aa.style.display ="none";
+           av.style.display="none";
+            first =false;
+        }
+        else{
+            az.style.display="none";
+            first=true;
+        }   
+    }
+
+
+  
+let second = true;
+
+function football(){
+    if(second === true){
+           aa.style.display="block";
+           az.style.display="none";;
+            second =false;
+            av.style.display="none";
+        }
+        else{
+            aa.style.display="none";
+            second=true;
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+          let number =Math.ceil(Math.random() * 1000000 +1)
+         alert(number)
+         let  gist= +prompt('can u guess the opt number and the win 500 thousand ')        
+               
+         let count = 0;
+
+         while(number !== gist){
+         aa= +prompt('start now and u have limited times to go')
+        let num =3;
+       a=num - count
+        alert(a)
+       count++
+       if(count ===3){
+        break;
+       }
+         if(number===aa){
+            document.body.innerHTML='congratulations you have win 500 thousand';
+         }
+            
+         else{
+            document.body.innerHTML='i am sorry you lose tre again later';
+         }
+       
+}
+
+    
+    </script>
+</body>
+</html>

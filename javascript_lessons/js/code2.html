@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <style>    
+        .navigator{
+            display: none;
+        } 
+    
+        ul{
+        display: flex;
+        margin-left: 300px;
+       }
+       ul li {
+        margin-left: 20px;
+        list-style: none;
+        font-size: 30px;
+        text-transform: capitalize;
+       }    
+    
+       h3{
+        text-align: center;
+        font-size: 30px;
+        text-transform: capitalize;
+        color: firebrick;
+       }
+        </style>
+         <div class="navigator" id="navigator">
+            <ul>
+                <li>home</li>
+                <li>food</li>
+                <li>meau</li>
+                <li>gallary</li>
+                <li>about us</li>
+            </ul>
+        </div>
+
+        <button onclick="clickBtn()" class="btn btn-danger">click here to view navigations</button>
+     <br><br><br>
+      
+     <h3 id="display">sam</h3>
+     <script>
+
+    let head=document.getElementById("navigator")
+    let button=false
+
+    function clickBtn(){
+      if(button === false){
+          head.style.display ="block";
+          button =true;
+    }
+      else{
+          button =false;
+          head.style.display ="none";
+    }
+    }
+
+
+
+
+    var names="samuel"
+        switch(names){
+            case "adeola":
+                 document.getElementById('display').innerHTML="my name is demola and my best food is rice and bean";
+               console.log("adeola")
+                break;
+
+            case "samuel":
+                 document.getElementById('display').innerHTML="my name is pelemo samuel and i love codeing"
+                    console.log("samuel")
+                    break;
+
+            case "blessing":
+                 document.getElementById('display').innerHTML="my name is blessing. my best colour is pink";
+                console.log("blessing")
+                break;
+                
+        }
+
+     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <div id="head">
+   <img src="../lesson 1/clothe/shirt.jpeg" alt="">
+    <h3>price $12</h3>
+    <P>A Red Shirt For US</P>
+    </div>
+    <style>
+      .card{
+         background-color: red;
+         width: 300px;
+         height: 300px;
+      }
+      .card h1{
+         color: aliceblue;
+         text-align: center;
+      }
+    </style>
+    <BUtton onclick="close()">open</BUtton>
+    <button onclick="open()">close</button>
+
+
+    <button id="result" onclick="add()">result</button>
+
+
+    <h3 id="color1" onclick="colorChange()">change color</h3>
+
+    <div class="card" id="card" onclick="colorChange()">
+      <h1>learning new topic</h1>
+      <h3>name</h3>
+      <p>  consequatur ratione est aperiam fugit deserunt cupiditate, atque placeat voluptatem.</p>
+    </div>
+
+
+
+    <h1 id="body" onclick="clock()">wecome to my world</h1>
+    <h1 id="year" onclick="year()">which year are we</h1>
+    <h1 id="sam" onclick="month()">what is the time</h1>
+    <script>
+
+         function clock(){
+            document.getElementById("body").innerHTML =Date();
+         }
+        
+         function year(){
+            document.getElementById("year").innerHTML =new Date().getFullYear()
+         }
+        
+         function month(){
+            document.getElementById("sam").innerHTML =new Date().getHours()
+         }
+
+
+         
+         function open(){
+            var aa=document.getElementById("head");
+            aa.style.display="block";
+         }
+        
+         
+         function close(){
+            var az=document.getElementById("head");
+            az.style.display="none";
+         }
+    </script>
+    <script src="lesson1.js"></script>
+</body>
+</html>

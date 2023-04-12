@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =0;
+        while(a <=5){
+            alert(a)
+            a++;
+        }
+
+        let aa=5;
+        while(aa >=0){
+            alert(aa)
+            aa--;
+        }
+     
+    let otp = Math.ceil(Math.random() * 1000000 +1)
+    alert(otp)
+   let  answer = +prompt('enter the otp sent to u')
+     let count = 0;
+     while(otp !== answer){
+        answer = +prompt('enter correct otp')
+        let num =3;
+        n=num - count
+        alert(n)
+        count++
+        if(count ===3){
+            break;
+            
+        }
+     }
+    
+
+
+     
+     let nin =Math.ceil(Math.random() * 1000000 +1)
+    alert(nin)
+   let  ans = +prompt('enter the nin number');
+     let con = 0;
+     while(nin  !== ans){
+       let ans = +prompt('enter correct nin number')
+        let num =3;
+        let aa=num-con
+        alert(aa)
+        con++
+        if(con ===3){
+            break
+        }
+     }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
