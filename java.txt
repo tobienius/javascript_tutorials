@@ -1,0 +1,308 @@
+types of data we have are 
+string, number underfined, null, boolean
+to see the type of data that you are useing you we press typeof hey
+
+type of orpartor we have
+= assignment operator
+< less than operator
+> greater than operator
+<= less than or equall operator
+>= greater than or equall operator
++ addtion operator
+- subtraction operator
+/ division operator
+* multiplication operator
+% modulus operator
+++ incretment operator
+-- derement operator
+! not  operator
+
+
+
+this is use to create a random number
+let number =Math.ceil(Math.random() * 1000000 +1)
+         alert(number)
+         count =0
+
+
+this is use to create a random number and to add addsional information 
+let number =Math.ceil(Math.random() * 1000000 +1)
+         alert(number)
+         count =0
+         let otp=+prompt("enter otp number given to you")
+         while(otp !== number){
+            otp =prompt('enter otp again')
+            count++;
+            if(count===3){
+                document.getElementById("sam").innerHTML="you are blocked"
+                break;
+            }
+            else{
+                document.getElementById("sam").innerHTML="try again later"
+            }
+         }
+
+
+this is use to conbin html code with java script below
+let names =['samuel','johnson','jhon','mark','matthew'];
+        let len =names.length;
+      // let a=0;
+      // a=a+1
+      // console.log(a);
+
+        let html_tags ="<ul>";
+            for(let n =0; n<len; n++){
+                html_tags += '<li>' + names[n] + '</li>';
+            }
+
+            html_tags += "</ul>";
+            document.getElementById('stud').innerHTML=html_tags;
+
+
+this is how to get an even number with while loop
+ let start=0;
+       let end=30;
+        while(start<=end){
+            if(start%2===0){
+                console.log(start);
+            }
+            start++;
+        }
+
+
+
+this is how to get an odd number with while loop
+ let aa=0;
+       let bb=30;
+        while(aa<=bb){
+            if(aa%2===1){
+                console.log(aa);
+            }
+            aa++;
+        }
+
+
+this is use to check the day using switch case below
+ let day;
+        switch(new Date().getDay()){
+            case 0:
+                day="sunday"
+                break;
+
+                case 1:
+                    day ="monday"
+                    break;
+
+                case 2:
+                    day ="tuesday"
+                    break;  
+
+                    case 3:day="wednesday"
+                break;    
+                case 4:day="thursday" 
+                break;
+
+                case 5:day="friday"
+                break;
+
+                case 6:day ="saturday"
+                break;
+        }
+        document.getElementById('check').innerHTML= "today is " + day;
+
+
+this is use for removeing the last sentences like this array below. some it we remove barcelona
+            let clubs=['P.S.G','Man u','chelse','barcelona']; 
+              clubs.pop()
+
+when pop remove push we add like this below
+            clubs.push("barcelona")
+
+this is to join thing together
+let clubs=['P.S.G','Man u','chelse','barcelona']; 
+    clubs.join("*")
+            console.log(clubs.join('*'));
+
+
+this is to see the value with alert.
+     let name="samuel";
+         let pin="sam123"
+         let balance=259;
+         prompt('enter your name');
+         prompt("enter yonr pin")
+
+   this is to see an odd number.
+ for(let x=0; x<10;x++){
+        if(x%2 ==1){
+            console.log(x)
+        }
+
+
+
+array and object
+how to creat a stardard time with java script
+
+ follup is use to find the length
+length is the number of things in 
+
+
+        let student={id:001,name:"david",class:"ss3",subject:"math",school:"my school"}
+        console.log(student);
+
+        to see the 
+        console.log(student.name);
+
+        to find the possition
+        student[1]="adeola"
+        
+        to add value on object
+        student.colour="blue"
+        console.log(student);
+
+
+  this is to see the value of the price of the rice using if statment.
+ let food ="rice";
+ let price;
+
+ if(food ==="rice"){
+    price = 300;
+    document.body.innerHTML="price is " + price;
+ } 
+
+
+     var bool= true
+
+        var place ="lagos"
+
+        var address;
+        var school =null;
+        console.log(school)
+
+        console.log(place)
+        console.log("type of data:",typeof hey)
+
+  <script>
+
+    var aa = 10;
+    let a = 10;
+    var as =a+aa;
+    console.log(aa+a)
+    alert(aa)
+    alert(as)
+
+    let name= "david";
+    var surname= "isreal";
+    var age =13;
+    let phone_no=09086756352;
+    console.log(name,surname,age,phone_no)
+
+
+       var first_name;
+       var last_name;
+       var age;
+       var school;
+
+       first_name="pelemo";
+       last_name="samuel";
+       age =14;
+       school="ifako high school"
+       console.log(first_name,last_name,age,school)
+
+    q= 10;
+    s= 3;
+    console.log(q%3)
+
+
+   var ba=20,b=30,sum=ba+b;
+   console.log("sum:",sum)
+   var p;
+   console.log("checking",p)
+   p=100;
+   console.log(p)
+
+
+        document.getElementById("document").style.fontSize="50px"
+        document.getElementById("document").style.color="blue"
+        document.getElementById("document").style.background="lemon"
+        document.getElementById("document").style.textAlign="center"
+
+
+        document.getElementById("dock").innerHTML=surname
+        document.getElementById("id").innerHTML=age
+        document.getElementById("age").innerHTML=phone_number
+</script>
+
+
+    <h1 id="sam">dejehd</h1>
+    <h1 id="dan">gyshushus</h1>
+    <h1 id="java">shsxhxhh</h1>
+    <h1 id="js">hsdhsdhhs</h1>
+    <script>
+        var pi=3.14;
+        var r=7;
+        var ans=pi*(r*r);
+        console.log(ans);
+        document.getElementById("sam").innerHTML=ans
+    
+        var pi=2*27;
+        var r=2*5;
+        var c=(pi*r)
+        console.log(c)
+        document.getElementById("dan").innerHTML=c
+
+        var h=7;
+        var b=4;
+        var c=(h*b)/2;
+        console.log(c)
+        document.getElementById("java").innerHTML=c
+
+        var lenght=8;
+        var width=4;
+        var area=(lenght*width);
+        console.log(area);
+        document.getElementById("js").innerHTML=area
+     </script>
+
+array is a collection of the same value 
+ var arr=[2,5,67 ,"davi"];
+        console.log(arr);
+
+        var aa=["house","school","student"];  
+        console.log(aa); 
+        var ad= typeof arr
+        console.log(ad);
+
+        var ar=["toyota","honda","benz","jeep"];
+        console.log(ar);
+        console.log(typeof ar);
+
+        var person={"name" :"david","age" :15,"address" :"yetude_brown"};
+        console.log(person["name"]);
+        console.log(typeof person);
+        
+        var school={"name" :"ayo","class" :"jss3","age" :13, "phone-no" :0908645373};
+        console.log(school["name"]);
+        console.log(typeof school);
+
+    var date=new Date()
+    console.log(date)
+    var da=new Date().getDate()
+    console.log("today's date:", da);
+    var time=new Date().getHours()
+    console.log(time)
+    var tim=new Date().getMinutes()
+    console.log(tim);
+    var dat=new Date().getSeconds()
+    console.log(dat)
+
+    document.body.innerHTML=time +":"+tim +":"+dat;
+
+  var name="my name is ayo";
+        console.log(name.indexOf("is"));
+        console.log();
+
+        var age="i am ten years old";
+        console.log(age.toUpperCase());
+
+        var sex="i am a male";
+        console.log(sex.toLowerCase())
